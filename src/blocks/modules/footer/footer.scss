@@ -1,0 +1,120 @@
+.footer {
+    background-image: url("../img/svg/back_for_contacts.svg");
+    background-position: bottom;
+
+    &_socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 12rem;
+        padding-bottom: 9rem;
+
+        &_text {
+            font-family: "Verdana", sans-serif;
+            color: rgb(199, 198, 198);
+        }
+        &_buttons {
+            width: 2.8rem;
+            height: 2.5rem;
+            margin: 0.1rem;
+            border: none;
+            padding: 0;
+            font-size: 1.5rem;
+            background-color: rgba(60, 63, 65, 0.849);
+            color: rgb(199, 198, 198);
+            &_pin {
+                width: 2.8rem;
+                height: 2.5rem;
+                margin: 0.1rem;
+                border: none;
+                padding: 0;
+                font-size: 1.5rem;
+                background-color: rgb(111, 246, 235);
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
+.contact-us {
+    display: flex;
+
+    &_inputs {
+        display: flex;
+        flex-direction: column;
+        background-color: #021623;
+        opacity: 70%;
+        width: 34.5rem;
+        height: 26.5rem;
+        margin-top: 8rem;
+        margin-left: 9.3rem;
+        padding: 1.2rem 1.9rem;
+    }
+
+    &_adress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 27.5rem;
+        background-color: #021623;
+        opacity: 70%;
+        margin-left: 1.8rem;
+        margin-top: 8rem;
+        padding: 1.2rem 1.9rem;
+
+        &_text {
+            text-align: left;
+            color: rgb(199, 198, 198);
+            font-family: "Verdana", sans-serif;
+            font-size: 1rem;
+            line-height: 1.4rem;
+            padding-right: 12rem;
+        }
+    }
+
+    &_map {
+        opacity: 1;
+    }
+}
+input, textarea {
+    padding-top: 1.5rem;
+    padding-bottom: 1.1rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    resize: none;
+    color: rgb(199, 198, 198);
+    font-size: 0.9rem;
+}
+textarea {
+    height: 6.1rem;
+}
+input::placeholder, textarea::placeholder {
+    font-family: "Verdana", sans-serif;
+    font-size: 0.9rem;
+    color: rgb(199, 198, 198);
+}
+.contact-us_button {
+    width: 15.3rem;
+    height: 3.5rem;
+    text-align: left;
+    margin-top: 2rem;
+    padding-left: 2.5rem;
+    font-size: 1.2rem;
+    font-family: "Verdana", sans-serif;
+    letter-spacing: 1.5px;
+    border: none;
+    background: rgb(111, 246, 235);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+.contact-us_button:hover {
+    box-shadow: 5px 10px 18px #ffffff;
+    transition: all 0.2s;
+}
+.contact-us_button:active {
+    box-shadow: none;
+}
+.footer_socials_buttons:hover {
+    background-color: rgb(111, 246, 235);
+    color: rgb(0, 0, 0);
+}

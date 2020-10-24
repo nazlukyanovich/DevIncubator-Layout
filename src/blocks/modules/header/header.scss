@@ -1,0 +1,58 @@
+.header {
+    background-color: #eff0f2;
+    text-align: center;
+
+    &_logo {
+        position: absolute;
+        font-family: "Montserrat-Bold", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 1.9rem;
+        border: 6px solid rgb(0, 0, 0);
+        font-weight: 800;
+        margin-top: 3.5rem;
+        margin-left: 9.5rem;
+        padding: 2px 7px 2px 7px;
+
+        &_O {
+            font-size: 1.5rem;
+            color: rgb(119, 239, 229);
+        }
+    }
+    &_text {
+        margin-top: 20%;
+        font-family: "Montserrat-Regular", "Verdana", sans-serif;
+        color: rgb(80, 80, 80);
+        font-size: 2.7rem;
+        line-height: 3.9rem;
+        letter-spacing: 1px;
+        filter: drop-shadow(3px 7px 4px rgba(0, 0, 0, 0.336));
+
+        &_highlight {
+            background-color: rgb(178, 242, 238);
+            padding: 0 15px 0 15px;
+        }
+    }
+    &_button {
+        display: inline-block;
+        font-family: "Montserrat-Regular", sans-serif;
+        font-size: medium;
+        border: 2px solid rgb(80, 80, 80);
+        color: rgb(80, 80, 80);
+        background: none;
+        margin-top: 9.5%;
+        padding: 1rem 3rem 1rem 3rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+    }
+    &_pic {
+        text-align: right;
+        margin-top: -2%;
+        padding-right: 14%;
+        margin-bottom: 4rem;
+    }
+}
+.header_button:hover {
+    transition: all 1s;
+    background-color: rgb(178, 242, 238);
+}

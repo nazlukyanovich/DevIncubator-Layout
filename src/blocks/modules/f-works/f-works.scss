@@ -1,0 +1,21 @@
+.f-works {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &_header {
+        padding-top: 7.5rem;
+        padding-bottom: 7rem;
+        padding-left: 1.4rem;
+    }
+    &_images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 7.5rem;
+
+        &_each {
+            padding: 0.45rem;
+        }
+    }
+}

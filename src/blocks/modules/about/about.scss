@@ -1,0 +1,37 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafa;
+    text-align: center;
+
+    &_header {
+        font-family: "Montserrat", "Verdana", sans-serif;
+        padding-top: 120px;
+        padding-bottom: 110px;
+        padding-left: 1.4rem;
+    }
+    &_content {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8.2rem;
+
+        &_image {
+            margin-left: 12.4rem;
+        }
+        &_text {
+            font-size: 1.1rem;
+            letter-spacing: 0.8px;
+            padding-top: 2.3rem;
+            padding-left: 7.5rem;
+            padding-right: 12rem;
+            text-align: left;
+            p {
+                line-height: 1.8rem;
+                font-size: medium;
+                color: rgb(133, 133, 133);
+                font-family: "Merriweather", sans-serif;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
