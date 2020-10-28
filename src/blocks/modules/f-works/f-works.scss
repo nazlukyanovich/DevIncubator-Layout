@@ -19,3 +19,16 @@
         }
     }
 }
+
+.popup {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.show {
+    margin-top: 10rem;
+    max-width: 1000px;
+    box-shadow: 20px 20px 10px rgba(0,0,0,0.5);
+    visibility: visible;
+    transition: all 1s;
+}
