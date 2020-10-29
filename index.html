@@ -18,7 +18,7 @@
         CONTACT US
     </button>
     <div class="header_pic">
-        <img src="/img/svg/juiceGlass.svg" alt="glass"/>
+        <img src="img/svg/juiceGlass.svg" alt="glass">
     </div>
 </header>
             <div class="about-us">
@@ -28,7 +28,7 @@
     </div>
     <div class="about-us_content">
         <div>
-            <img class="about-us_content_image" src="img/svg/about.svg"/>
+            <img class="about-us_content_image" src="img/svg/about.svg">
         </div>
         <div class="about-us_content_text">
             <h3>WE ACTUALLY DO AMAZING WORKS</h3>
@@ -50,12 +50,19 @@
         <h2>LOREM IPSUM DOLOR SIT AMET EVENT LANDINGD TEMPLATE</h2>
     </div>
     <div class="f-works_images">
-        <img class="f-works_images_each" src="img/svg/iceCream.svg">
-        <img class="f-works_images_each" src="img/svg/bCard.svg">
-        <img class="f-works_images_each" src="img/svg/bottles.svg">
-        <img class="f-works_images_each" src="img/svg/book.svg">
-        <img class="f-works_images_each" src="img/svg/9.svg">
-        <img class="f-works_images_each" src="img/svg/healingTea.svg">
+        <img class="f-works_images_each" src="img/svg/iceCream.svg" alt="ice-cream" onclick="myPopup('iceCream')">
+        <img class="f-works_images_each" src="img/svg/bCard.svg" alt="card" onclick="myPopup('card')">
+        <img class="f-works_images_each" src="img/svg/bottles.svg" alt="bottles" onclick="myPopup('bottles')">
+        <img class="f-works_images_each" src="img/svg/book.svg" alt="book" onclick="myPopup('book')">
+        <img class="f-works_images_each" src="img/svg/9.svg" alt="nine" onclick="myPopup('nine')">
+        <img class="f-works_images_each" src="img/svg/healingTea.svg" alt="healingTea" onclick="myPopup('healingTea')">
+
+        <img class="popup" id="iceCream" src="img/svg/iceCream_full.svg" alt="ice-cream" onclick="myPopup('iceCream')">
+        <img class="popup" id="card" src="img/svg/bCard_full.svg" alt="card" onclick="myPopup('card')">
+        <img class="popup" id="bottles" src="img/svg/bottles_full.svg" alt="bottles" onclick="myPopup('bottles')">
+        <img class="popup" id="book" src="img/svg/book_full.svg" alt="book" onclick="myPopup('book')">
+        <img class="popup" id="nine" src="img/svg/9_full.svg" alt="nine" onclick="myPopup('nine')">
+        <img class="popup" id="healingTea" src="img/svg/healingTea_full.svg" alt="healingTea" onclick="myPopup('healingTea')">
     </div>
 </div>
             <div class="team">
@@ -259,5 +266,15 @@
         </div>
         <script src="js/main.min.js"></script>
         <script src="js/vendor.min.js"></script>
+        <script>
+            function myPopup(id) {
+                let elements = document.getElementsByClassName('show');
+                let popup = document.getElementById(id);
+                if (elements[0] && elements[0]!=popup) {
+                    elements[0].classList.remove("show");
+                }
+                popup.classList.toggle("show");
+    }
+        </script>
     </body>
 </html>
