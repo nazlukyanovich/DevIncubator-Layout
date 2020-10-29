@@ -4,40 +4,416 @@
 @import "base/fonts";
 @import "../blocks/modules";
 
-.container {
+.header {
+    background-color: #eff0f2;
+    text-align: center;
+  }
+  
+  .header_logo {
+    position: absolute;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.9rem;
+    border: 6px solid black;
+    font-weight: 800;
+    margin-top: 3.5rem;
+    margin-left: 9.5rem;
+    padding: 2px 7px 2px 7px;
+  }
+  
+  .header_logo_O {
+    font-size: 1.5rem;
+    color: #77efe5;
+  }
+  
+  .header_text {
+    margin-top: 20%;
+    font-family: "Montserrat-Regular", "Verdana", sans-serif;
+    color: #505050;
+    font-size: 2.7rem;
+    line-height: 3.9rem;
+    letter-spacing: 1px;
+    filter: drop-shadow(3px 7px 4px rgba(0, 0, 0, 0.336));
+  }
+  
+  .header_text_highlight {
+    background-color: #b2f2ee;
+    padding: 0 15px 0 15px;
+  }
+  
+  .header_button {
+    display: inline-block;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: medium;
+    border: 2px solid #505050;
+    color: #505050;
+    background: none;
+    margin-top: 9.5%;
+    padding: 1rem 3rem 1rem 3rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+  }
+  
+  .header_pic {
+    text-align: right;
+    margin-top: -2%;
+    padding-right: 14%;
+    margin-bottom: 4rem;
+  }
+  
+  .header_button:hover {
+    transition: all 1s;
+    background-color: #b2f2ee;
+  }
+  
+  .footer {
+    background-image: url("../img/svg/back_for_contacts.svg");
+    background-position: bottom;
+  }
+  
+  .footer_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12rem;
+    padding-bottom: 9rem;
+  }
+  
+  .footer_socials_text {
+    font-family: "Verdana", sans-serif;
+    color: #c7c6c6;
+  }
+  
+  .footer_socials_buttons {
+    width: 2.8rem;
+    height: 2.5rem;
+    margin: 0.1rem;
+    border: none;
+    padding: 0;
+    font-size: 1.5rem;
+    background-color: rgba(60, 63, 65, 0.849);
+    color: #c7c6c6;
+  }
+  
+  .footer_socials_buttons_pin {
+    width: 2.8rem;
+    height: 2.5rem;
+    margin: 0.1rem;
+    border: none;
+    padding: 0;
+    font-size: 1.5rem;
+    background-color: #6ff6eb;
+    color: black;
+  }
+  
+  .contact-us {
+    display: flex;
+  }
+  
+  .contact-us_inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: #021623;
+    opacity: 70%;
+    width: 34.5rem;
+    height: 26.5rem;
+    margin-top: 8rem;
+    margin-left: 9.3rem;
+    padding: 1.2rem 1.9rem;
+  }
+  
+  .contact-us_adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 27.5rem;
+    background-color: #021623;
+    opacity: 70%;
+    margin-left: 1.8rem;
+    margin-top: 8rem;
+    padding: 1.2rem 1.9rem;
+  }
+  
+  .contact-us_adress_text {
+    text-align: left;
+    color: #c7c6c6;
+    font-family: "Verdana", sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding-right: 12rem;
+  }
+  
+  .contact-us_map {
+    opacity: 1;
+  }
+  
+  input,
+  textarea {
+    padding-top: 1.5rem;
+    padding-bottom: 1.1rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    resize: none;
+    color: #c7c6c6;
+    font-size: 0.9rem;
+  }
+  
+  textarea {
+    height: 6.1rem;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    font-family: "Verdana", sans-serif;
+    font-size: 0.9rem;
+    color: #c7c6c6;
+  }
+  
+  .contact-us_button {
+    width: 15.3rem;
+    height: 3.5rem;
+    text-align: left;
+    margin-top: 2rem;
+    padding-left: 2.5rem;
+    font-size: 1.2rem;
+    font-family: "Verdana", sans-serif;
+    letter-spacing: 1.5px;
+    border: none;
+    background: #6ff6eb;
+    color: black;
+    border-radius: 3px;
+  }
+  
+  .contact-us_button:hover {
+    box-shadow: 5px 10px 18px #ffffff;
+    transition: all 0.2s;
+  }
+  
+  .contact-us_button:active {
+    box-shadow: none;
+  }
+  
+  .footer_socials_buttons:hover {
+    background-color: #6ff6eb;
+    color: black;
+  }
+  
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafa;
+    text-align: center;
+  }
+  
+  .about-us_header {
+    font-family: "Montserrat", "Verdana", sans-serif;
+    padding-top: 120px;
+    padding-bottom: 110px;
+    padding-left: 1.4rem;
+  }
+  
+  .about-us_content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8.2rem;
+  }
+  
+  .about-us_content_image {
+    margin-left: 12.4rem;
+  }
+  
+  .about-us_content_text {
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+    padding-top: 2.3rem;
+    padding-left: 7.5rem;
+    padding-right: 12rem;
+    text-align: left;
+  }
+  
+  .about-us_content_text p {
+    line-height: 1.8rem;
+    font-size: medium;
+    color: #858585;
+    font-family: "Merriweather", sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  .f-works {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .f-works_header {
+    padding-top: 7.5rem;
+    padding-bottom: 7rem;
+    padding-left: 1.4rem;
+  }
+  
+  .f-works_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 7.5rem;
+  }
+  
+  .f-works_images_each {
+    padding: 0.45rem;
+  }
+  
+  .popup {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .show {
+    margin-top: 10rem;
+    max-width: 1000px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+    visibility: visible;
+    transition: all 1s;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f8fafa;
+  }
+  
+  .team_header {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+    padding-left: 1.4rem;
+  }
+  
+  .team_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10rem;
+  }
+  
+  .team_images_each {
+    padding: 0.46rem;
+  }
+  
+  .member_hover {
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(3px 7px 9px rgba(0, 0, 0, 0.226));
+    background-color: #6ff6eb;
+    position: relative;
+    width: 335px;
+  }
+  
+  .member_hover_text {
+    font-size: 1.2rem;
+    font-family: "Merriweather", "Verdana", sans-serif;
+    font-weight: 700;
+    margin: 2rem 0 0 0;
+    color: #2c3a38;
+  }
+  
+  .member_hover_text_italic {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    color: #787878;
+  }
+  
+  .member_hover_text_lower {
+    text-align: left;
+    padding-left: 3rem;
+    line-height: 1.8rem;
+    font-size: medium;
+    font-family: "Merriweather", sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #225050;
+  }
+  
+  .member_hover_social {
+    display: flex;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+  }
+  
+  .member_hover::before {
+    content: "";
+    position: absolute;
+    top: -2.2rem;
+    left: 1rem;
+    border: 15px solid transparent;
+    border-bottom: 30px solid #6ff6eb;
+  }
+  
+  .fa {
+    padding: 0.4rem;
+  }
+  
+  .visible {
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    opacity: 0;
+  }
+  
+  .wrapper {
+    position: relative;
+  }
+  
+  .wrapper:hover .visible {
+    display: block;
+    opacity: 1;
+    transition: all 1s;
+  }
+  
+  .container {
     max-width: 1440px;
     display: flex;
     flex-direction: column;
     margin: auto;
-}
-button {
+  }
+  
+  button {
     outline: none;
-}
-h1 {
+  }
+  
+  h1 {
     margin: 0;
-    color: rgb(50, 50, 50);
+    color: #323232;
     letter-spacing: 1px;
     font-size: 2.3rem;
     font-family: "Montserrat", "Verdana", sans-serif;
     font-weight: 700;
-}
-h2 {
+  }
+  
+  h2 {
     margin: 0;
-    color: rgb(133, 133, 133);
+    color: #858585;
     letter-spacing: 0.8px;
     line-height: 0.4rem;
     font-size: 1.2rem;
     font-family: "Merriweather", sans-serif;
     font-weight: 400;
-}
-h3 {
+  }
+  
+  h3 {
     margin: 0;
-    color: rgb(90, 90, 90);
+    color: #5a5a5a;
     letter-spacing: 0.4px;
-}
-a,
-a:link,
-a:visited {
+  }
+  
+  a,
+  a:link,
+  a:visited {
     text-decoration: none;
-    color: rgb(90, 90, 90);
-}
+    color: #5a5a5a;
+  }
+  
+  
